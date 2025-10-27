@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voltar"
+            android:layout_gravity="start"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@android:color/holo_purple"
+            />
+
+        <ImageView
+            android:id="@+id/imgCapaDetalhe"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/capa_jogo" />
+
+        <TextView
+            android:id="@+id/tvNomeDetalhe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvDesenvolvedoraDetalhe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvGeneroDetalhe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvDescricaoDetalhe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnSteam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abrir na Steam"
+            android:backgroundTint="@android:color/holo_purple"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnWiki"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_purple"
+            android:text="Ver na Wiki" />
+
+    </LinearLayout>
+</ScrollView>
