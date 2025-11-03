@@ -1,5 +1,6 @@
 
-[![Assista ao vídeo](https://img.youtube.com/vi/Xd_UAy4RnmM/0.jpg)](https://youtube.com/shorts/Xd_UAy4RnmM)
+[Vídeo clique aqui](https://youtube.com/shorts/Xd_UAy4RnmM)
+
 
 <img width="346" height="769" alt="image" src="https://github.com/user-attachments/assets/82ce790a-3d94-46b9-8181-e2854310ef1b" />
 <img width="343" height="766" alt="image" src="https://github.com/user-attachments/assets/04a23200-4861-4463-b685-82bbc535ba49" />
