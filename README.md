@@ -1,6 +1,6 @@
 # Guia de Jogos
 
-Aplicativo Android para exibir uma lista de jogos, com detalhes de cada jogo, compatível com **modo claro e escuro**. O app utiliza **Material3**, layouts responsivos e cores consistentes entre light/dark mode.
+Aplicativo Android para exibir uma lista de jogos, com detalhes de cada jogo, compatível com **modo claro e escuro**. O app utiliza , layouts responsivos e cores consistentes entre light/dark mode.
 Desenvolvido na aula de Dispositivos Móveis, do 4º semestre no Instituto Federal Campus Araraquara.
 
 ---
