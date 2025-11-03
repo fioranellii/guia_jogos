@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="#F5F5F5">
+    android:background="?attr/android:windowBackground">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,11 +15,11 @@
             android:id="@+id/btnVoltar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Voltar"
+            android:text="⛌"
             android:layout_gravity="start"
             android:layout_marginBottom="12dp"
-            android:backgroundTint="@android:color/holo_purple"
-            />
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="?attr/colorOnPrimary" />
 
         <ImageView
             android:id="@+id/imgCapaDetalhe"
@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:textSize="22sp"
             android:textStyle="bold"
-            android:textColor="@android:color/black"
+            android:textColor="?attr/android:textColor"
             android:layout_marginBottom="8dp" />
 
         <TextView
@@ -43,7 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16sp"
-            android:textColor="@android:color/darker_gray"
+            android:textColor="?attr/android:textColorSecondary"
             android:layout_marginBottom="8dp" />
 
         <TextView
@@ -51,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16sp"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="?attr/colorPrimary"
             android:layout_marginBottom="12dp" />
 
         <TextView
@@ -59,23 +59,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="15sp"
-            android:textColor="@android:color/black"
+            android:textColor="?attr/android:textColor"
             android:layout_marginBottom="16dp" />
 
         <Button
             android:id="@+id/btnSteam"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Abrir na Steam"
-            android:backgroundTint="@android:color/holo_purple"
+            android:text="Steam"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="?attr/colorOnPrimary"
             android:layout_marginBottom="8dp" />
 
         <Button
             android:id="@+id/btnWiki"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@android:color/holo_purple"
-            android:text="Ver na Wiki" />
+            android:text="Wiki"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="?attr/colorOnPrimary" />
 
     </LinearLayout>
 </ScrollView>

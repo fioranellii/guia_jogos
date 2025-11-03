@@ -1,5 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Guia Jogos</string>
-    <string name="capa_jogo">Capa do jogo</string>
+    <string name="app_name">Guia de Jogos</string>
+    <string name="botao_tema">🌙 Tema</string>
+    <string name="botao_idioma">🇧🇷 PT/EN</string>
+    <string name="titulo_principal">Jogos do Hugão 10/10</string>
+
+    <string name="capa_jogo">Game cover</string>
+
+    <string name="nome_sekiro">Sekiro: Shadows Die Twice</string>
+    <string name="desc_sekiro">Um jogo de ação no Japão feudal, focado em combate preciso e exploração.</string>
+    <string name="nome_isaac">The Binding of Isaac</string>
+    <string name="desc_isaac">Um RPG de ação e tiro roguelike com elementos de masmorra.</string>
+    <string name="desc_webfishing">Um jogo de pesca social multijogador, focado em pescar e conversar em salas 3D.</string>
+    <string name="desc_mhw">Um RPG em mundo aberto onde o jogador caça monstros no Novo Mundo.</string>
+    <string name="desc_mouthwashing">Um jogo de terror psicológico em um cargueiro espacial.</string>
+    <string name="desc_warframe">Um jogo de ação online gratuito onde os jogadores controlam os Tenno.</string>
+
+    <string name="genero_acao_aventura">Ação e aventura</string>
+    <string name="genero_roguelike">Roguelike</string>
+    <string name="genero_casual">Casual</string>
+    <string name="genero_aventura">Aventura</string>
+    <string name="genero_tiro">Tiro em terceira pessoa</string>
 </resources>

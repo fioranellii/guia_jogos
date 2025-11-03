@@ -1,15 +1,17 @@
 package com.example.guia_jogos.ui
 
+import android.content.Intent
+import android.content.res.Configuration
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.example.guia_jogos.R
 import com.example.guia_jogos.adapter.JogoAdapter
 import com.example.guia_jogos.databinding.ActivityMainBinding
 import com.example.guia_jogos.model.Jogo
-import android.content.Intent
+import java.util.*
 
-class   MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var jogos: List<Jogo>
@@ -22,25 +24,44 @@ class   MainActivity : AppCompatActivity() {
         loadData()
         setupViews()
         setupListeners()
+
+        binding.btnTema.setOnClickListener {
+            val mode = AppCompatDelegate.getDefaultNightMode()
+            if (mode == AppCompatDelegate.MODE_NIGHT_YES) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            }
+        }
+
+        binding.btnIdioma.setOnClickListener {
+            val current = resources.configuration.locales[0]
+            val newLocale = if (current.language == "pt") Locale("en") else Locale("pt")
+            Locale.setDefault(newLocale)
+            val config = Configuration()
+            config.setLocale(newLocale)
+            resources.updateConfiguration(config, resources.displayMetrics)
+            recreate()
+        }
     }
 
     private fun loadData() {
         jogos = listOf(
             Jogo(
                 R.drawable.sekiro,
-                "Sekiro: Shadows Die Twice",
+                getString(R.string.nome_sekiro),
                 "FromSoftware",
-                "Ação e aventura",
-                "Um jogo de ação no Japão feudal, focado em combate preciso e exploração.",
+                getString(R.string.genero_acao_aventura),
+                getString(R.string.desc_sekiro),
                 "https://store.steampowered.com/app/814380/Sekiro_Shadows_Die_Twice/",
                 "https://sekiroshadowsdietwice.wiki.fextralife.com/Sekiro+Shadows+Die+Twice+Wiki"
             ),
             Jogo(
                 R.drawable.isaac,
-                "The Binding of Isaac",
+                getString(R.string.nome_isaac),
                 "Edmund McMillen",
-                "Roguelike",
-                "Um RPG de ação e tiro roguelike com elementos de masmorra.",
+                getString(R.string.genero_roguelike),
+                getString(R.string.desc_isaac),
                 "https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/",
                 "https://bindingofisaacrebirth.fandom.com/wiki/Binding_of_Isaac:_Rebirth_Wiki"
             ),
@@ -48,8 +69,8 @@ class   MainActivity : AppCompatActivity() {
                 R.drawable.webfshing,
                 "Webfishing",
                 "Lamedeveloper",
-                "Casual",
-                "Um jogo de pesca social multijogador, focado em pescar e conversar em salas 3D.",
+                getString(R.string.genero_casual),
+                getString(R.string.desc_webfishing),
                 "https://store.steampowered.com/app/3071070/WEBFISHING/",
                 "https://webfishing.wiki.gg/"
             ),
@@ -57,8 +78,8 @@ class   MainActivity : AppCompatActivity() {
                 R.drawable.mhw,
                 "Monster Hunter: World",
                 "Capcom",
-                "Ação e aventura",
-                "Um RPG em mundo aberto onde o jogador caça monstros no Novo Mundo.",
+                getString(R.string.genero_acao_aventura),
+                getString(R.string.desc_mhw),
                 "https://store.steampowered.com/app/582010/Monster_Hunter_World/",
                 "https://monsterhunterworld.wiki.fextralife.com/Monster+Hunter+World+Wiki"
             ),
@@ -66,8 +87,8 @@ class   MainActivity : AppCompatActivity() {
                 R.drawable.mouthwashing,
                 "Mouthwashing",
                 "Critical Reflex, Fangamer",
-                "Aventura",
-                "Um jogo de terror psicológico em um cargueiro espacial.",
+                getString(R.string.genero_aventura),
+                getString(R.string.desc_mouthwashing),
                 "https://store.steampowered.com/app/2600580/Mouthwashing/",
                 "https://mouthwashing.fandom.com/wiki/Mouthwashing_Wiki"
             ),
@@ -75,14 +96,13 @@ class   MainActivity : AppCompatActivity() {
                 R.drawable.warframe,
                 "Warframe",
                 "Digital Extremes",
-                "Tiro em terceira pessoa",
-                "Um jogo de ação online gratuito onde os jogadores controlam os Tenno.",
+                getString(R.string.genero_tiro),
+                getString(R.string.desc_warframe),
                 "https://store.steampowered.com/app/230410/Warframe/",
                 "https://wiki.warframe.com/"
             )
         ).sortedBy { it.nome }
     }
-
 
     private fun setupViews() {
         val adapter = JogoAdapter(this, jogos)
@@ -92,7 +112,6 @@ class   MainActivity : AppCompatActivity() {
     private fun setupListeners() {
         binding.listViewJogos.setOnItemClickListener { _, _, position, _ ->
             val jogo = jogos[position]
-
             val intent = Intent(this, DetalheActivity::class.java).apply {
                 putExtra("capa", jogo.capa)
                 putExtra("nome", jogo.nome)
@@ -102,9 +121,7 @@ class   MainActivity : AppCompatActivity() {
                 putExtra("linkSteam", jogo.linkSteam)
                 putExtra("linkWiki", jogo.linkWiki)
             }
-
             startActivity(intent)
         }
     }
-
 }

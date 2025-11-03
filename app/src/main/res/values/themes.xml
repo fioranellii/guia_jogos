@@ -1,17 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="Theme.GuiaPocket" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Cores principais -->
-        <item name="colorPrimary">@color/spotifyGreen</item>
-        <item name="colorPrimaryVariant">@color/spotifyGreenDark</item>
-        <item name="colorSecondary">@color/spotifyGreen</item>
-
-        <!-- Fundo e texto -->
-        <item name="android:colorBackground">@color/background</item>
-        <item name="colorSurface">@color/surface</item>
-        <item name="android:textColor">@color/textPrimary</item>
-
-        <!-- Status bar / navegação -->
-        <item name="android:statusBarColor">@color/spotifyBlack</item>
-        <item name="android:navigationBarColor">@color/spotifyBlack</item>
+    <style name="Base.Theme.GuiaJogos" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/background_light</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorSecondary">@color/outline_variant_light</item>
     </style>
 </resources>

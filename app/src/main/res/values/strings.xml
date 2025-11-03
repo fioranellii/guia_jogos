@@ -1,5 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Games Guide</string>
-    <string name="capa_jogo">Game Cover</string>
+    <string name="app_name">Game Guide</string>
+    <string name="botao_tema">🌙 Theme</string>
+    <string name="botao_idioma">🇺🇸 EN/PT</string>
+    <string name="titulo_principal">Hugo Top 10 Games</string>
+
+    <string name="capa_jogo">Game cover</string>
+
+    <string name="nome_sekiro">Sekiro: Shadows Die Twice</string>
+    <string name="desc_sekiro">An action game set in feudal Japan focused on precise combat and exploration.</string>
+    <string name="nome_isaac">The Binding of Isaac</string>
+    <string name="desc_isaac">A roguelike action RPG shooter with dungeon elements.</string>
+    <string name="desc_webfishing">A social multiplayer fishing game where players fish and chat in 3D rooms.</string>
+    <string name="desc_mhw">An open-world RPG where players hunt monsters in the New World.</string>
+    <string name="desc_mouthwashing">A psychological horror game set on a space freighter.</string>
+    <string name="desc_warframe">A free online action game where players control the Tenno warriors.</string>
+
+    <string name="genero_acao_aventura">Action and Adventure</string>
+    <string name="genero_roguelike">Roguelike</string>
+    <string name="genero_casual">Casual</string>
+    <string name="genero_aventura">Adventure</string>
+    <string name="genero_tiro">Third-person Shooter</string>
 </resources>

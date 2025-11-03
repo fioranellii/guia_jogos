@@ -29,14 +29,12 @@ class DetalheActivity : AppCompatActivity() {
         binding.tvGeneroDetalhe.text = genero
         binding.tvDescricaoDetalhe.text = descricao
 
-        // Botão voltar
         binding.btnVoltar.setOnClickListener { finish() }
         // Botão Steam
         binding.btnSteam.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(linkSteam))
             startActivity(intent)
         }
-        // Botão Wiki
         binding.btnWiki.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(linkWiki))
             startActivity(intent)
