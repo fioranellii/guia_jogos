@@ -1,6 +1,7 @@
 # Guia de Jogos
 
 Aplicativo Android para exibir uma lista de jogos, com detalhes de cada jogo, compatível com **modo claro e escuro**. O app utiliza **Material3**, layouts responsivos e cores consistentes entre light/dark mode.
+Desenvolvido na aula de Dispositivos Móveis, do 4º semestre no Instituto Federal Campus Araraquara.
 
 ---
 
@@ -41,23 +42,3 @@ Aplicativo Android para exibir uma lista de jogos, com detalhes de cada jogo, co
 - TextViews de nome, desenvolvedora, gênero e descrição
 - Botões: Steam e Wiki
 - Botão de voltar
-
----
-
-## Temas e Cores
-
-### Cores definidas (`colors.xml`)
-
-```xml
-<color name="purple_200">#BB86FC</color>
-<color name="purple_500">#6750A4</color>
-<color name="purple_700">#5E35B1</color>
-
-<color name="white">#FFFFFF</color>
-<color name="black">#000000</color>
-
-<color name="background_light">#F5F5F5</color>
-<color name="background_dark">#121212</color>
-
-<color name="outline_variant_light">#D1C4E9</color>
-<color name="outline_variant_dark">#2C2C2C</color>
