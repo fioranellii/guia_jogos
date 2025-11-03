@@ -1,3 +1,6 @@
+[![Funcionamento do app](https://img.youtube.com/vi/Xd_UAy4RnmM/maxresdefault.jpg)](https://youtu.be/Xd_UAy4RnmM)
+
+
 # Guia de Jogos
 
 Aplicativo Android para exibir uma lista de jogos, com detalhes de cada jogo, compatível com **modo claro e escuro**. O app utiliza , layouts responsivos e cores consistentes entre light/dark mode.
