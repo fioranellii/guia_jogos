@@ -23,6 +23,13 @@
 
         <activity
             android:name=".ui.DetalheActivity"
-            android:exported="true" />
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.CadastroActivity"
+            android:exported="false"
+            android:label="@string/titulo_cadastro"
+            android:parentActivityName=".ui.MainActivity" />
+
     </application>
 </manifest>

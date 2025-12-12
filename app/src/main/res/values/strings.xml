@@ -20,4 +20,20 @@
     <string name="genero_casual">Casual</string>
     <string name="genero_aventura">Adventure</string>
     <string name="genero_tiro">Third-person Shooter</string>
+
+    <string name="dica_filtro_jogo">Buscar jogo por nome...</string>
+    <string name="botao_cadastro">Cadastrar Jogo</string>
+
+    <string name="titulo_cadastro">Novo Jogo</string>
+    <string name="salvar_cadastro">SALVAR JOGO</string>
+    <string name="escolher_imagem">Escolher Capa</string>
+    <string name="imagem_do_jogo">Capa do Jogo</string>
+
+    <string name="nome_do_jogo">Nome do Jogo</string>
+    <string name="desenvolvedora">Desenvolvedora</string>
+    <string name="genero_categoria">Gênero / Categoria</string>
+    <string name="descricao">Descrição</string>
+    <string name="link_steam">Link da Steam</string>
+    <string name="link_wiki">Link da Wiki / Site Oficial</string>
+
 </resources>

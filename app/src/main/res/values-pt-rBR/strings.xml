@@ -20,4 +20,7 @@
     <string name="genero_casual">Casual</string>
     <string name="genero_aventura">Aventura</string>
     <string name="genero_tiro">Tiro em terceira pessoa</string>
+
+    <string name="dica_filtro_jogo">Buscar jogo por nome...</string>
+    <string name="botao_cadastro">Cadastrar Jogo</string>
 </resources>
